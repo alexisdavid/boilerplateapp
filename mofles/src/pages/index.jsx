@@ -15,6 +15,7 @@ const PageIndex = () => {
     window.sessionStorage.getItem('token')?setLoged(true):setLoged(false)
    
   }, [])
+  
   const [loged,setLoged]=useState(false)
   const [user, setUser] = useState({
     user: "",
