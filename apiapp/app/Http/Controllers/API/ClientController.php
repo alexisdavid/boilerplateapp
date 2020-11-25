@@ -18,7 +18,8 @@ class ClientController extends Controller
     public function index()
     {
         $client = ClientModel::all();
-        return response([ 'client' => CLIENTResource::collection($client), 'message' => 'Retrieved successfully'], 200);
+        
+        return response(['success'=>true, 'client' => CLIENTResource::collection($client), 'message' => 'Retrieved successfully'], 200);
     }
 
     /**

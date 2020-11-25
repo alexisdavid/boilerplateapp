@@ -28,7 +28,8 @@ const PageIndex = () => {
       let token = JSON.stringify(response.result.access_token);
      window.sessionStorage.setItem('token',token);
      window.sessionStorage.setItem('user',user);
-     setLoged(true)
+     window.location='/clients'
+    //  setLoged(true)
     }
       
     

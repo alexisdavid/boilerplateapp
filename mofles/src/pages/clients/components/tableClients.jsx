@@ -83,11 +83,12 @@ function handleClick(posicion){
     ),
   };
   async function getClients() {
-    const response = await request.get("/clients");
+    const response = await request.get("/client");
     
-    if (response && response.statusCode <300) {
+    if (response && response.statusCode === 200) {
+     
       if (response.result.success ) {
-        setData(response.result.datos)
+        setData(response.result.client)
       }
     }
   }
