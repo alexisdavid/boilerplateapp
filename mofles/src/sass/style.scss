@@ -1,0 +1,50 @@
+/*
+ *  @version 1.0.1
+ *  @author Trejocode - Sergio
+ *  @description Constructor de la hoja de estilos
+ *  @variables {Boolean} dev: Activa las opciones de desarrollo
+*/
+
+$dev: false;
+
+/*  
+*   1.- Core Styles
+*   2.- Componentes
+*   3.- Helpers
+*   4.- Páginas
+*   5.- Libs
+*/
+
+
+/*      Core       */
+
+@import './core/dev';
+@import './core/trejocode';
+@import './core/colors';
+@import './core/font';
+@import './core/spacing';
+
+
+/*      Helpers      */
+
+@import './helpers/bg';
+@import './helpers/iframe';
+
+
+/*      Componentes      */
+
+@import './components/header';
+@import './components/footer';
+
+
+/*      Páginas      */
+
+@import './pages/index';
+@import './pages/fetch';
+
+
+/*      Libs     */
+@import './libs/nprogress';
+
+
+@if $dev { @include dev; }

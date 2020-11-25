@@ -1,0 +1,9 @@
+.login{
+    background-image: url('https://moflesgonzalez.com.mx/img/3711/000.jpg');
+    height:700px !important;
+    background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+
+}
+

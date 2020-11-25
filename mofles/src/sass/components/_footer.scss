@@ -1,0 +1,42 @@
+/*
+ *  @version 1.0.1
+ *  @author Trejocode - Sergio
+ *  @description Estilos para el componente <Footer /> 
+*/
+
+footer {
+    
+    padding: $paddingLarge 0;
+    background-color: var(--primary-alt);
+
+    .social {
+
+        justify-content: flex-end;
+
+        a {
+            padding: 0 $paddingNormal;
+        }
+
+    }
+
+    @media screen and (max-width: 768px){
+        
+        padding: $paddingMedium 0;
+
+        .social, .legend {
+            margin: $marginNormal 0;
+            justify-content: center;
+        }
+
+    }
+
+}
+
+
+html[data-theme='dark'] {
+ 
+    footer {
+        background-color: var(--white);
+    }
+
+}

@@ -1,0 +1,7 @@
+# @description Configuración para Apache
+# @url https://create-react-app.dev/docs/deployment
+
+Options -MultiViews
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.html [QSA,L]

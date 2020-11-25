@@ -1,0 +1,11 @@
+/*
+ *  @version 1.0.1
+ *  @author Trejocode - Sergio
+ *  @description Mixin para bakcgroundImages
+*/
+
+@mixin backgroundImage {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

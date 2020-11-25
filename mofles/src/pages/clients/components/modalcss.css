@@ -1,0 +1,10 @@
+/* examples/custom-styling.css */
+
+.customModal {
+ 
+  max-width: 1000px;
+  width: 100%;
+}
+.react-responsive-modal-overlay {
+  z-index: 2000 !important;
+}

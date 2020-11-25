@@ -1,0 +1,24 @@
+/*
+ *  @version 1.0.1
+ *  @author Trejocode - Sergio
+ *  @description Estilos para la página de /index
+*/
+
+body {
+    min-height: 200vh;
+    
+}
+
+.page-index {
+
+    min-height: calc(100vh - 182px);
+    
+    h1 { font-size: 4rem; }
+
+    @media screen and (max-width: 768px){
+        h1 {
+            font-size: 2.5rem;
+        }
+    }
+
+}
